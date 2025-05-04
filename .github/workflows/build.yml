@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Get the tag version
         id: extract_branch
-        run: echo "branch=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+        run: echo "branch=2.7.4.post1" >> $GITHUB_OUTPUT
         shell: bash
       - name: Create Release
         id: create_release
@@ -18,8 +18,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.extract_branch.outputs.branch }}
-          release_name: ${{ steps.extract_branch.outputs.branch }}
+          tag_name: 2.7.4.post1
+          release_name: 2.7.4.post1
           body: |
             | Flash-Attention | Python | PyTorch | CUDA |
             |-----------------|--------|---------|------|
@@ -132,17 +132,13 @@ jobs:
           pip install flash-attention/dist/${{ env.wheel_name }}
           python -c "import flash_attn; print(flash_attn.__version__)"
 
-      - name: Get the tag version
-        id: extract_branch
-        run: echo "branch=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
-
       - name: Get Release with Tag
         id: get_release
         uses: joutvhu/get-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.extract_branch.outputs.branch }}
+          tag_name: 2.7.4.post1
 
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
