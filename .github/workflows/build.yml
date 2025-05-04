@@ -23,7 +23,7 @@ jobs:
           body: |
             | Flash-Attention | Python | PyTorch | CUDA |
             |-----------------|--------|---------|------|
-            | 2.7.4.post1 | 3.11, 3.12 | 2.6.0, 2.7.0 | 12.8.1 |
+            | 2.7.4.post1 | 3.11 | 2.7.0 | 12.8 |
 
   build_wheels:
     name: Build wheels and Upload
@@ -34,10 +34,10 @@ jobs:
       fail-fast: false
       matrix:
         flash-attn-version: ["2.7.4.post1"]
-        python-version: ["3.12","3.11"]
-        torch-version: ["2.6.0", "2.7.0"]
+        python-version: ["3.11"]
+        torch-version: ["2.7.0"]
         # https://developer.nvidia.com/cuda-toolkit-archive
-        cuda-version: ["12.8.1"]
+        cuda-version: ["12.8"]
 
     steps:
       - uses: actions/checkout@v4
