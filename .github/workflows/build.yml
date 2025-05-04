@@ -1,9 +1,7 @@
 name: Build wheels and upload to GitHub Releases
 
 on:
-  create:
-    tags:
-      - "v*"
+  workflow_dispatch:
 
 jobs:
   create_releases:
