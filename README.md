@@ -30,9 +30,4 @@ ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: AMD EPYC 9K84 (16) @ 2.600GHz
       -+sssssssssssssssssyyyssss+-         GPU: NVIDIA 63:00.0 NVIDIA Corporation Device 2329 
         `:+ssssssssssssssssss+:`           GPU: NVIDIA 33:00.0 NVIDIA Corporation Device 2329 
             .-/+oossssoo+/-.               Memory: 1506MiB / 65536MiB 
-
-                                                                   
-                                                                   
-
-
 ```
