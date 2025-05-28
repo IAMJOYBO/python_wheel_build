@@ -1,4 +1,4 @@
-## 自用轮子
+## ComfyUI 自用轮子
 ### 基于 Linux Python3.11 Torch2.7.0+cu128
 ### 基于环境：pytorch/pytorch:2.7.0-cuda12.8-cudnn9-devel
 下载地址：[https://github.com/IAMJOYBO/python_wheel_build/releases](https://github.com/IAMJOYBO/python_wheel_build/releases)
@@ -31,3 +31,5 @@ ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: AMD EPYC 9K84 (16) @ 2.600GHz
         `:+ssssssssssssssssss+:`           GPU: NVIDIA 33:00.0 NVIDIA Corporation Device 2329 
             .-/+oossssoo+/-.               Memory: 1506MiB / 65536MiB 
 ```
+## 其他轮子
+见 Release 页面：[https://github.com/IAMJOYBO/python_wheel_build/releases](https://github.com/IAMJOYBO/python_wheel_build/releases)
